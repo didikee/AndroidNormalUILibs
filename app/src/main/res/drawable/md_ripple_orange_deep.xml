@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+    <!--上面是波纹颜色-->
+    <!--Item颜色-->
+    <solid android:color="@color/orange_main"/>
+
+</shape>

@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.android.application'
+//添加申请生成插件
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+//------------------------------
+def siteUrl = 'https://github.com/WX-JIN/JContact' //项目在github主页地址
+def gitUrl = 'https://github.com/WX-JIN/JContact.git'   //Git仓库的地址
+
+group = "com.soubw"//发布aar前缀根节点
+
+version = "0.0.1"//发布aar的库版本
+
+//最后生成是compile 'com.soubw:jcontactlib:0.0.1' 就是group + ：+module名字 + ：+version
+
+//---------------------------------
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+//        applicationId "com.didikee.uilibs"
+//        versionCode 1
+//        versionName "1.0"
+        minSdkVersion 15
+        targetSdkVersion 24
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+
+}
