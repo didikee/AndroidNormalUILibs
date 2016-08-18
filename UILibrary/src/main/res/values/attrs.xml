@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--xedittext-->
+    <declare-styleable name="XEditText">
+        <attr name="inner_background" format="reference"/>
+    </declare-styleable>
+
+    <!--ProgressShowView-->
+    <declare-styleable name="ProgressShowView">
+        <attr name="color_up" format="color"/>
+        <attr name="color_down" format="color"/>
+    </declare-styleable>
+
+    <!--HorizontalItemView-->
+    <declare-styleable name="HorizontalItemView">
+        <attr name="leftImage_src" format="reference"/>
+        <attr name="rightImage_src" format="reference"/>
+        <attr name="leftText_text" format="string"/>
+        <attr name="rightText_text" format="string"/>
+        <attr name="leftImage_marginLeft" format="dimension"/>
+        <attr name="rightImage_marginRight" format="dimension"/>
+        <attr name="leftText_textColor" format="color"/>
+        <attr name="rightText_textColor" format="color"/>
+        <attr name="leftText_textSize" format="dimension"/>
+        <attr name="rightText_textSize" format="dimension"/>
+        <attr name="line_gravity" format="flag"/>
+        <attr name="line_marginStart" format="dimension"/>
+        <attr name="line_marginEnd" format="dimension"/>
+        <attr name="line_color" format="color"/>
+        <attr name="line_strokeWidthPx" format="dimension"/>
+    </declare-styleable>
+</resources>
