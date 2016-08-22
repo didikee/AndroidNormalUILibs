@@ -4,54 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     tools:context="com.didikee.example.act.ItemViewActivity">
 
-    <!--<FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        >
+    <!--<attr name="leftImage_src" format="reference"/>
+    <attr name="rightImage_src" format="reference"/>
+    <attr name="leftText_text" format="string"/>
+    <attr name="rightText_text" format="string"/>
+    <attr name="leftImage_marginLeft" format="dimension"/>
+    <attr name="rightImage_marginRight" format="dimension"/>
+    <attr name="leftText_marginLeft" format="dimension"/>
+    <attr name="rightText_marginRight" format="dimension"/>
+    <attr name="leftText_textColor" format="color"/>
+    <attr name="rightText_textColor" format="color"/>
+    <attr name="leftText_textSize" format="dimension"/>
+    <attr name="rightText_textSize" format="dimension"/>
+    <attr name="line_gravity" format="integer"/>
+    <attr name="line_marginStart" format="dimension"/>
+    <attr name="line_marginEnd" format="dimension"/>
+    <attr name="line_color" format="color"/>
+    <attr name="line_strokeWidthPx" format="integer"/>
+    &lt;!&ndash;size&ndash;&gt;
+    <attr name="leftImage_width" format="dimension|enum">
+        <enum name="wrap_content" value="-2"/>
+        <enum name="match_parent" value="-1"/>
+    </attr>
+    <attr name="rightImage_width" format="dimension|enum">
+        <enum name="wrap_content" value="-2"/>
+        <enum name="match_parent" value="-1"/>
+    </attr>
+    <attr name="leftImage_height" format="dimension|enum">
+        <enum name="wrap_content" value="-2"/>
+        <enum name="match_parent" value="-1"/>
+    </attr>
+    <attr name="rightImage_height" format="dimension">
+        <enum name="wrap_content" value="-2"/>
+        <enum name="match_parent" value="-1"/>
+    </attr>-->
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
-            android:src="@mipmap/ic_launcher"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="100dp"
-            android:text="@string/app_name"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="100dp"
-            android:text="@string/app_name"/>
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="10dp"
-            android:src="@mipmap/ic_launcher"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_gravity="bottom"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="15dp"
-            android:background="@android:color/darker_gray"/>
-
-    </FrameLayout>-->
     <com.didikee.uilibs.viewgroups.HorizontalItemView
         android:id="@+id/itemview"
         android:layout_width="match_parent"
-        android:layout_height="200dp"/>
+        android:layout_height="200dp"
+        app:leftImage_src="@mipmap/ic_launcher"
+        app:leftImage_width="40dp"
+        app:leftImage_height="40dp"
+        app:leftImage_marginLeft="12dp"
+        app:leftText_marginLeft="60dp"
+        app:leftText_text="商品名称"
+        app:leftText_textColor="@color/azure"
+        app:leftText_textSize="16sp"
+        app:rightImage_src="@mipmap/ic_launcher"
+        app:rightImage_width="50dp"
+        app:rightImage_height="50dp"
+        app:rightImage_marginRight="8dp"
+        app:line_color="@color/orange"
+        app:line_strokeWidthPx="2"
+        app:line_gravity="bottom"
+        android:background="@drawable/md_ripple_white"
+        android:clickable="true"
+        />
 
 </RelativeLayout>

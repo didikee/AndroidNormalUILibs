@@ -19,14 +19,38 @@
         <attr name="rightText_text" format="string"/>
         <attr name="leftImage_marginLeft" format="dimension"/>
         <attr name="rightImage_marginRight" format="dimension"/>
+        <attr name="leftText_marginLeft" format="dimension"/>
+        <attr name="rightText_marginRight" format="dimension"/>
         <attr name="leftText_textColor" format="color"/>
         <attr name="rightText_textColor" format="color"/>
         <attr name="leftText_textSize" format="dimension"/>
         <attr name="rightText_textSize" format="dimension"/>
-        <attr name="line_gravity" format="flag"/>
+        <attr name="line_gravity" format="enum">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+            <enum name="top" value="48"/>
+            <enum name="bottom" value="80"/>
+        </attr>
         <attr name="line_marginStart" format="dimension"/>
         <attr name="line_marginEnd" format="dimension"/>
         <attr name="line_color" format="color"/>
-        <attr name="line_strokeWidthPx" format="dimension"/>
+        <attr name="line_strokeWidthPx" format="integer"/>
+        <!--size-->
+        <attr name="leftImage_width" format="dimension|enum">
+            <enum name="wrap_content" value="-2"/>
+            <enum name="match_parent" value="-1"/>
+        </attr>
+        <attr name="rightImage_width" format="dimension|enum">
+            <enum name="wrap_content" value="-2"/>
+            <enum name="match_parent" value="-1"/>
+        </attr>
+        <attr name="leftImage_height" format="dimension|enum">
+            <enum name="wrap_content" value="-2"/>
+            <enum name="match_parent" value="-1"/>
+        </attr>
+        <attr name="rightImage_height" format="dimension">
+            <enum name="wrap_content" value="-2"/>
+            <enum name="match_parent" value="-1"/>
+        </attr>
     </declare-styleable>
 </resources>
