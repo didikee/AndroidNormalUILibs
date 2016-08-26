@@ -69,8 +69,8 @@ public class HorizontalItemView extends FrameLayout {
 
     /**
      * right imageview
-     * @param width  -1:match_parent -2:wrap_content
-     * @param height -1:match_parent -2:wrap_content
+     * @param width  -1:match_parent -2:wrap_content need px
+     * @param height -1:match_parent -2:wrap_content need px
      * @param drawableId res id
      */
     public void setRightImageView(int width,int height,int drawableId,int marginRight){
@@ -88,7 +88,7 @@ public class HorizontalItemView extends FrameLayout {
      * left textview
      * @param txt text content
      * @param textColor color
-     * @param textSize textSize
+     * @param textSize textSize need sp
      * @param marginLeft margin left to parent
      */
     public void setLeftTextView(String txt,int textColor,float textSize,int marginLeft){
@@ -129,8 +129,8 @@ public class HorizontalItemView extends FrameLayout {
      * @param gravity location
      * @param color color
      * @param strokeWidthPx stroke width eg:1px
-     * @param marginStart margin start
-     * @param marginEnd margin end
+     * @param marginStart margin start need px
+     * @param marginEnd margin end need px
      */
     public void setLine(int gravity,int color,int strokeWidthPx,int marginStart,int marginEnd) {
         //添加分隔线
