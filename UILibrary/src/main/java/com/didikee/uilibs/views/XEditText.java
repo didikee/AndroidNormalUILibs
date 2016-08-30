@@ -1,4 +1,4 @@
-package com.didikee.uilibs.views.customviews;
+package com.didikee.uilibs.views;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -7,15 +7,18 @@ import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.widget.TextView;
+import android.widget.EditText;
 
 import com.didikee.uilibs.R;
 
 
 /**
- * Created by didik on 2016/8/17.
+ * Created by didik on 2016/8/15.
+ *
+ *
  */
-public class XTextView extends TextView {
+public class XEditText extends EditText {
+
     public static final int DRAWABLE_LEFT = 0;
     public static final int DRAWABLE_TOP = 1;
     public static final int DRAWABLE_RIGHT = 2;
@@ -24,17 +27,17 @@ public class XTextView extends TextView {
     private OnDrawableClickListener mListener;
 
 
-    public XTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public XEditText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         getAttrs(context, attrs);
     }
 
-    public XTextView(Context context, AttributeSet attrs) {
+    public XEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
         getAttrs(context, attrs);
     }
 
-    public XTextView(Context context) {
+    public XEditText(Context context) {
         super(context);
     }
 
@@ -52,7 +55,7 @@ public class XTextView extends TextView {
          *            DRAWABLE_RIGHT = 2
          *            DRAWABLE_BOTTOM = 3
          */
-        void onDrawableClick(XTextView view, int who);
+        void onDrawableClick(XEditText view, int who);
     }
     public void setOnDrawableClickListener(OnDrawableClickListener listener){
         this.mListener=listener;
@@ -147,9 +150,10 @@ public class XTextView extends TextView {
 
     /**
      *
-     * @param background background
+     * @param background  background drawable
      */
     public void setInnerBackground(Drawable background) {
         this.mInnerBackground = background;
     }
+
 }

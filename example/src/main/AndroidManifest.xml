@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".act.ItemViewActivity">
         </activity>
+        <activity android:name=".act.ImageTextActivity">
+        </activity>
     </application>
 
 </manifest>

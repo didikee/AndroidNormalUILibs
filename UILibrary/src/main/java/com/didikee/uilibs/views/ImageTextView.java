@@ -1,4 +1,4 @@
-package com.didikee.uilibs.views.customviews;
+package com.didikee.uilibs.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -17,13 +17,14 @@ import com.didikee.uilibs.utils.DisplayUtil;
  * imageview with text
  *
  * note: text length must be less!!! text width must be smaller than View's width.
+ * note: no src,you should give a specified dimension
  */
 public class ImageTextView extends ImageView {
 
     private Context mContext;
     private Paint mPaint;
 
-    private String mText="Hello";
+    private String mText="";
     private boolean mBold =false;
     private int mGravity= CENTER;
     private int mColor= Color.BLACK;
@@ -58,9 +59,10 @@ public class ImageTextView extends ImageView {
 
     private void getAttrs(AttributeSet attrs) {
         TypedArray typedArray = mContext.obtainStyledAttributes(attrs, R.styleable.ImageTextView);
-        mTextSize= typedArray.getDimension(R.styleable.ImageTextView_textSize, 14);
+        float textSize = typedArray.getDimension(R.styleable.ImageTextView_textSize, 14);
+        mTextSize=DisplayUtil.px2sp(mContext,textSize);
         mText=typedArray.getString(R.styleable.ImageTextView_text);
-        mBold=typedArray.getBoolean(R.styleable.ImageTextView_bold,false);
+        mBold=typedArray.getBoolean(R.styleable.ImageTextView_textBold,false);
         mGravity=typedArray.getInt(R.styleable.ImageTextView_textGravity,1);
         mColor=typedArray.getColor(R.styleable.ImageTextView_textColor,Color.BLACK);
         typedArray.recycle();

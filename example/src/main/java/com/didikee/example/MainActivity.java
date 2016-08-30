@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.didikee.example.act.ImageTextActivity;
 import com.didikee.example.act.ItemViewActivity;
 
 public class MainActivity extends Activity {
@@ -16,7 +17,7 @@ public class MainActivity extends Activity {
 
     private String[] strs=new String[]{
             "test",
-            "test",
+            "ImageTextView",
             "test",
             "test",
             "test"
@@ -39,6 +40,7 @@ public class MainActivity extends Activity {
                         gotoActivity(ItemViewActivity.class);
                         break;
                     case 2:
+                        gotoActivity(ImageTextActivity.class);
                         break;
                     case 3:
                         break;

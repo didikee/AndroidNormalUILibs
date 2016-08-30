@@ -64,6 +64,6 @@
             <enum name="CENTER" value="1"/>
             <enum name="RIGHT" value="2"/>
         </attr>
-        <attr name="bold" format="boolean"/>
+        <attr name="textBold" format="boolean"/>
     </declare-styleable>
 </resources>

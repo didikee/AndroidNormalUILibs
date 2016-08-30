@@ -6,7 +6,7 @@ import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.widget.Toast;
 
-import com.didikee.uilibs.views.customviews.XEditText;
+import com.didikee.uilibs.views.XEditText;
 
 
 /**

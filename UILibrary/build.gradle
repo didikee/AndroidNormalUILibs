@@ -12,6 +12,7 @@ android {
     buildToolsVersion "24.0.0"
 
     defaultConfig {
+        multiDexEnabled true
 //        applicationId "com.didikee.uilibs"
         versionCode 1
         versionName "1.0"
@@ -45,7 +46,7 @@ ext {
     siteUrl = 'https://github.com/didikee/AndroidNormalUILibs'
     gitUrl = 'https://github.com/didikee/AndroidNormalUILibs.git'
 
-    libraryVersion = '0.0.3'
+    libraryVersion = '0.0.4'
 
     developerId = 'didikee'
     developerName = 'didikee'

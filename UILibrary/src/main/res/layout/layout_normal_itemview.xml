@@ -9,7 +9,7 @@
         android:layout_height="60dp"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="10dp"
-        android:src="@mipmap/ic_launcher"/>
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
         android:layout_height="60dp"
         android:layout_gravity="right|center_vertical"
         android:layout_marginRight="10dp"
-        android:src="@mipmap/ic_launcher"/>
+        />
 
     <View
         android:layout_width="match_parent"
