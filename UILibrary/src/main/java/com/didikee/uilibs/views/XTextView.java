@@ -14,6 +14,8 @@ import com.didikee.uilibs.R;
 
 /**
  * Created by didik on 2016/8/17.
+ *
+ * Drawable Left Top Right Bottom to set a click listener.
  */
 public class XTextView extends TextView {
     public static final int DRAWABLE_LEFT = 0;

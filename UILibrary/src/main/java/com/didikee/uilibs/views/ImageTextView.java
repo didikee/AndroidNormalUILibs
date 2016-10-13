@@ -5,6 +5,8 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.text.TextPaint;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
@@ -14,7 +16,7 @@ import com.didikee.uilibs.utils.DisplayUtil;
 
 /**
  * Created by didik on 2016/8/23.
- * imageview with text
+ * imageView with text
  *
  * note: text length must be less!!! text width must be smaller than View's width.
  * note: no src,you should give a specified dimension
@@ -144,5 +146,71 @@ public class ImageTextView extends ImageView {
         }else {
             mGravity=gravity;
         }
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+        if (widthMode==MeasureSpec.AT_MOST && !TextUtils.isEmpty(mText)){
+            //width
+//            setMeasuredDimension(measureText(mText),);
+
+        }else if (heightMode==MeasureSpec.AT_MOST && !TextUtils.isEmpty(mText)){
+            //height
+
+        }else {
+            super.onMeasure(widthMeasureSpec,heightMeasureSpec);
+        }
+
+    }
+
+    private float measureText(String txt){
+        TextPaint textPaint = new TextPaint();
+        textPaint.setTextSize(mTextSize);
+        float ft = textPaint.measureText(txt);
+        return ft;
+    }
+
+//    @Override
+//    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+//
+//        int width  = measureDimension(DEFAULT_VIEW_WIDTH, widthMeasureSpec);
+//        int height = measureDimension(DEFAULT_VIEW_HEIGHT, heightMeasureSpec);
+//
+//        setMeasuredDimension(width, height);
+//    }
+//
+//    protected int measureDimension( int defaultSize, int measureSpec ) {
+//
+//        int result = defaultSize;
+//
+//        int specMode = MeasureSpec.getMode(measureSpec);
+//        int specSize = MeasureSpec.getSize(measureSpec);
+//
+//        //1. layout给出了确定的值，比如：100dp
+//        //2. layout使用的是match_parent，但父控件的size已经可以确定了，比如设置的是具体的值或者match_parent
+//        if (specMode == MeasureSpec.EXACTLY) {
+//            result = specSize; //建议：result直接使用确定值
+//        }
+//        //1. layout使用的是wrap_content
+//        //2. layout使用的是match_parent,但父控件使用的是确定的值或者wrap_content
+//        else if (specMode == MeasureSpec.AT_MOST) {
+//            result = Math.min(defaultSize, specSize); //建议：result不能大于specSize
+//        }
+//        //UNSPECIFIED,没有任何限制，所以可以设置任何大小
+//        //多半出现在自定义的父控件的情况下，期望由自控件自行决定大小
+//        else {
+//            result = defaultSize;
+//        }
+//
+//        return result;
+//    }
+
+    protected int mImageResId=0;
+    @Override
+    public void setImageResource(int resId) {
+        this.mImageResId=resId;
+        super.setImageResource(resId);
     }
 }

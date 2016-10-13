@@ -56,18 +56,16 @@ public class ProgressShowView extends View {
         int width = this.getWidth();
         int height = this.getHeight();
         //
-        //
         int radius = height / 2;
 
         //
         Paint p = new Paint();
 
         //
-        //
         p.setStyle(Paint.Style.FILL);//
         p.setColor(mColorDown);
         p.setAntiAlias(true);//
-        RectF ovalDown = new RectF(0, 0, width, height);//
+        RectF ovalDown = new RectF(0, 0, width, height);
         canvas.drawRoundRect(ovalDown, radius, radius, p);
 
         //
