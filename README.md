@@ -12,5 +12,5 @@ mShopListView.setScrollView(mSScrollView);
 mShopListView.setAdapter(mShopAdapter);
 ```
 API:
-1.setScrollView(ScrollView mParentScrollView)
-2.setInterceptTouchEventEnable(boolean isEnable)//动态的开启或关闭
+* setScrollView(ScrollView mParentScrollView)
+* setInterceptTouchEventEnable(boolean isEnable)//动态的开启或关闭
