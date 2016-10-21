@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.didikee.example.act.ImageTextActivity;
 import com.didikee.example.act.ItemViewActivity;
+import com.didikee.example.act.XTransparentTitleViewActivity;
 
 public class MainActivity extends Activity {
 
@@ -18,7 +19,7 @@ public class MainActivity extends Activity {
     private String[] strs=new String[]{
             "test",
             "ImageTextView",
-            "test",
+            "XTransparentTitleView",
             "test",
             "test"
     };
@@ -43,6 +44,7 @@ public class MainActivity extends Activity {
                         gotoActivity(ImageTextActivity.class);
                         break;
                     case 3:
+                        gotoActivity(XTransparentTitleViewActivity.class);
                         break;
                     case 4:
                         break;

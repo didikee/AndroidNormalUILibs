@@ -66,4 +66,10 @@
         </attr>
         <attr name="textBold" format="boolean"/>
     </declare-styleable>
+
+    <!--XTransparentTitleView-->
+    <declare-styleable name="XTransparentTitleView">
+        <attr name="TitleLayout" format="reference"/>
+        <attr name="ScrollViewInnerLayout" format="reference"/>
+    </declare-styleable>
 </resources>

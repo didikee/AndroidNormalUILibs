@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".act.ImageTextActivity">
         </activity>
+        <activity android:name=".act.XTransparentTitleViewActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_xtransparent_title_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.didikee.example.act.XTransparentTitleViewActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.didikee.uilibs.viewgroups.XTransparentTitleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:TitleLayout="@layout/item_titlelayout"
+        app:ScrollViewInnerLayout="@layout/item_contentlayout"
+        />
+
+</RelativeLayout>
