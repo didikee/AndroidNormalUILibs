@@ -8,6 +8,7 @@
     tools:context="com.didikee.example.act.XTransparentTitleViewActivity"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.didikee.uilibs.viewgroups.XTransparentTitleView
+        android:id="@+id/xt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:TitleLayout="@layout/item_titlelayout"
