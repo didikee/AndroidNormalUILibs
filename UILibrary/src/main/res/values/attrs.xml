@@ -71,5 +71,6 @@
     <declare-styleable name="XTransparentTitleView">
         <attr name="TitleLayout" format="reference"/>
         <attr name="ScrollViewInnerLayout" format="reference"/>
+        <attr name="BottomLayout" format="reference"/>
     </declare-styleable>
 </resources>
