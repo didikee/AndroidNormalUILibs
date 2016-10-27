@@ -58,6 +58,12 @@ public class DisplayUtil {
         final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
         return (int) (spValue * fontScale + 0.5f);
     }
+
+    /**
+     * 获取系统状态栏高度
+     * @param context context
+     * @return statusBar height
+     */
     public static int getSystemStatusBarHeight(Context context) {
         int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen",
                 "android");

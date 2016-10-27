@@ -67,7 +67,6 @@ public class XScrollView extends ScrollView {
     /**
      * 判断view是否在屏幕中可见
      * @param child view
-     * @return
      */
     public boolean isChildVisible(View child){
         if(child==null){

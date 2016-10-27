@@ -27,7 +27,7 @@ public class UICharacterCount {
 
     /**
      * 返回字符串的长度 规则如下: 以一个中文字符为单位,数字,字母,英文字符为0.5个单位.
-     * @param str
+     * @param str 任意字符串
      * @return float数值
      */
     public static float getCount(String str) {

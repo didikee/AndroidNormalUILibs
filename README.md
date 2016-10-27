@@ -14,3 +14,11 @@ mShopListView.setAdapter(mShopAdapter);
 API:
 * setScrollView(ScrollView mParentScrollView)
 * setInterceptTouchEventEnable(boolean isEnable)//动态的开启或关闭
+
+***
+### WaitFinishTextView
+
+一个TextView 点击后变为不可点击状态,直到你手动调用 ``````
+
+API:
+* onFinish() 在网络请求接口结束的回调(onFinish())中调用此方法,让TextView重新可点击

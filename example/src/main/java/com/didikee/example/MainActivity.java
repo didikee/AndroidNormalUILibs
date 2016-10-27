@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.didikee.example.act.ImageTextActivity;
 import com.didikee.example.act.ItemViewActivity;
+import com.didikee.example.act.ProgressTextActivity;
 import com.didikee.example.act.XTransparentTitleViewActivity;
 
 public class MainActivity extends Activity {
@@ -20,7 +21,7 @@ public class MainActivity extends Activity {
             "test",
             "ImageTextView",
             "XTransparentTitleView",
-            "test",
+            "ProgressTextActivity",
             "test"
     };
 
@@ -47,6 +48,7 @@ public class MainActivity extends Activity {
                         gotoActivity(XTransparentTitleViewActivity.class);
                         break;
                     case 4:
+                        gotoActivity(ProgressTextActivity.class);
                         break;
                 }
             }

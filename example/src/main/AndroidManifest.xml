@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".act.XTransparentTitleViewActivity">
         </activity>
+        <activity android:name=".act.ProgressTextActivity">
+        </activity>
     </application>
 
 </manifest>

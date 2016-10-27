@@ -140,7 +140,7 @@ public class XTransparentTitleView extends RelativeLayout {
 
     /**
      * 设置状态栏填充View的背景色
-     * @param color
+     * @param color color
      */
     public void setStatusBarColor(int color) {
         this.mStatusBarColor = color;
