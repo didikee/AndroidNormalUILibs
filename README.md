@@ -18,7 +18,7 @@ API:
 ***
 ### WaitFinishTextView
 
-一个TextView 点击后变为不可点击状态,直到你手动调用 ``````
+一个TextView 点击后变为不可点击状态,直到你手动调用 ```onFinish()```
 
 API:
 * onFinish() 在网络请求接口结束的回调(onFinish())中调用此方法,让TextView重新可点击
