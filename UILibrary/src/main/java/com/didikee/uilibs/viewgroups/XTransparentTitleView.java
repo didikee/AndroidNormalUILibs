@@ -8,7 +8,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -37,7 +36,6 @@ public class XTransparentTitleView extends RelativeLayout {
     private int mLimitHeight = 0;//状态栏透明计算的限制高度
     private OnScrollChangedListener mScrollChangeListener;
     private View mBottomView;
-    private GestureDetector mGestureDetector;
     private ObjectAnimator animator;
     private int mBottomHeight;
 
@@ -95,7 +93,6 @@ public class XTransparentTitleView extends RelativeLayout {
         mScrollView.setId(android.R.id.text1);
         RelativeLayout.LayoutParams scrollviewParams = new LayoutParams(ViewGroup.LayoutParams
                 .MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-//        scrollviewParams.addRule(RelativeLayout.ABOVE,android.R.id.text2);
         mScrollView.setLayoutParams(scrollviewParams);
         mScrollViewInnerLayout = View.inflate(context, scrollViewInnerLayoutID, mScrollView);
 
@@ -104,8 +101,6 @@ public class XTransparentTitleView extends RelativeLayout {
             mBottomView.setId(android.R.id.text2);
             RelativeLayout.LayoutParams btParams = new LayoutParams(ViewGroup.LayoutParams
                     .MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-//            btParams.addRule(RelativeLayout.BELOW,android.R.id.text1);
-//            btParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
             mBottomView.setLayoutParams(btParams);
         }
         //inflate inner layout start
@@ -115,21 +110,15 @@ public class XTransparentTitleView extends RelativeLayout {
 
         RelativeLayout.LayoutParams btParams = new LayoutParams(ViewGroup.LayoutParams
                 .MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-//        btParams.addRule(RelativeLayout.BELOW,android.R.id.text1);
         btParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
 
         this.addView(mScrollView,scParams);
         this.addView(mBottomView,btParams);
-//        this.addView(mScrollView,ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-//
-//        this.addView(mBottomView,ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 
         this.addView(mTopLayout, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams
                 .WRAP_CONTENT);
 
         ta.recycle();
-
-        mGestureDetector = new GestureDetector(context, scroller);
     }
 
     private int getSystemStatusBarHeight(Context context) {
@@ -282,8 +271,6 @@ public class XTransparentTitleView extends RelativeLayout {
     float moveY=0;
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-//        mGestureDetector.onTouchEvent(event);
-
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
                 downY= event.getY();
@@ -304,46 +291,9 @@ public class XTransparentTitleView extends RelativeLayout {
         return super.onTouchEvent(event);
     }
 
-    private GestureDetector.OnGestureListener scroller=new GestureDetector.OnGestureListener() {
-        @Override
-        public boolean onDown(MotionEvent e) {
-            return false;
-        }
-
-        @Override
-        public void onShowPress(MotionEvent e) {
-
-        }
-
-        @Override
-        public boolean onSingleTapUp(MotionEvent e) {
-            return false;
-        }
-
-        @Override
-        public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
-            return false;
-        }
-
-        @Override
-        public void onLongPress(MotionEvent e) {
-
-        }
-
-        @Override
-        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-            return false;
-        }
-    };
-
     public void setAlphaColor(int alpha, View... views) {
         alpha = alpha < 0 ? 0 : (alpha > 255 ? 255 : alpha);
         for (View view : views) {
-//            Drawable backgroundDrawable = view.getBackground();
-//            if (backgroundDrawable instanceof ColorDrawable){
-//                int color = ((ColorDrawable) backgroundDrawable).getColor();
-//                view.setBackgroundColor(color);
-//            }
             view.getBackground().setAlpha(alpha);
         }
     }
@@ -358,10 +308,6 @@ public class XTransparentTitleView extends RelativeLayout {
             View childAt = viewGroup.getChildAt(i);
             float tempAlpha= (float) (alpha *1.0 /255);
             childAt.setAlpha(tempAlpha);
-//            Drawable background = childAt.getBackground();
-//            if (background!=null){
-//                background.setAlpha(alpha);
-//            }
         }
     }
 
