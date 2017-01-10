@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--md 的尺寸是以 4和8 为基本度量的-->
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp24">24dp</dimen>
+    <dimen name="dp28">28dp</dimen>
+    <dimen name="dp32">32dp</dimen>
+    <dimen name="dp36">36dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp44">44dp</dimen>
+    <dimen name="dp48">48dp</dimen>
+    <dimen name="dp52">52dp</dimen>
+    <dimen name="dp56">56dp</dimen>
+    <dimen name="dp60">60dp</dimen>
+    <dimen name="dp64">64dp</dimen>
+    <dimen name="dp68">68dp</dimen>
+    <dimen name="dp72">72dp</dimen>
+
+    <!--margin-->
+    <dimen name="md_small_margin">@dimen/dp8</dimen>
+    <dimen name="md_normal_margin">@dimen/dp16</dimen>
+
+    <!--item height 显示列表时-->
+    <dimen name="md_item_small_height">@dimen/dp36</dimen>
+    <dimen name="md_item_normal_height">@dimen/dp48</dimen>
+    <dimen name="md_item_large_height">@dimen/dp56</dimen>
+    <dimen name="md_item_big_height">@dimen/dp72</dimen>
+</resources>
