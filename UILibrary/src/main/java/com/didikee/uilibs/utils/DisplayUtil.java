@@ -1,6 +1,10 @@
 package com.didikee.uilibs.utils;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.util.DisplayMetrics;
+import android.util.Pair;
+import android.view.WindowManager;
 
 /**
  * Created by didik on 2016/7/30.
@@ -64,9 +68,21 @@ public class DisplayUtil {
      * @param context context
      * @return statusBar height
      */
-    public static int getSystemStatusBarHeight(Context context) {
+    public static int getSystemStatusBarHeight(@NonNull Context context) {
         int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen",
                 "android");
         return context.getResources().getDimensionPixelSize(resourceId);
+    }
+
+    /**
+     * 获取屏幕的宽高
+     * @param context
+     * @return
+     */
+    public static Pair<Integer, Integer> getWindowPixels(@NonNull Context context){
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        DisplayMetrics displayMetrics =new DisplayMetrics();
+        wm.getDefaultDisplay().getMetrics(displayMetrics);
+        return new Pair<Integer,Integer>(displayMetrics.widthPixels,displayMetrics.heightPixels);
     }
 }

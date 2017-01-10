@@ -9,7 +9,6 @@ import android.view.WindowManager;
 
 import com.didikee.example.R;
 import com.didikee.uilibs.utils.DisplayUtil;
-import com.didikee.uilibs.viewgroups.XTransparentTitleView;
 
 public class XTransparentTitleViewActivity extends AppCompatActivity {
 

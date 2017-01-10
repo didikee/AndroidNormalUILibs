@@ -12,17 +12,18 @@ import com.didikee.example.act.ImageTextActivity;
 import com.didikee.example.act.ItemViewActivity;
 import com.didikee.example.act.ProgressTextActivity;
 import com.didikee.example.act.XTransparentTitleViewActivity;
+import com.didikee.example.ui.act.ShapeBgActivity;
 
 public class MainActivity extends Activity {
 
     private ListView mList;
 
     private String[] strs=new String[]{
-            "test",
-            "ImageTextView",
-            "XTransparentTitleView",
-            "ProgressTextActivity",
-            "test"
+            "1. test",
+            "2. ImageTextView",
+            "3. XTransparentTitleView",
+            "4. ProgressTextActivity",
+            "5. (4.1shape 背景不支持透明颜色)"
     };
 
     @Override
@@ -49,6 +50,9 @@ public class MainActivity extends Activity {
                         break;
                     case 4:
                         gotoActivity(ProgressTextActivity.class);
+                        break;
+                    case 5:
+                        gotoActivity(ShapeBgActivity.class);
                         break;
                 }
             }

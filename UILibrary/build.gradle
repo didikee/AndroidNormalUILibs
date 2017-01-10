@@ -16,7 +16,7 @@ android {
 //        applicationId "com.didikee.uilibs"
         versionCode 1
         versionName "1.0"
-        minSdkVersion 15
+        minSdkVersion 14
         targetSdkVersion 24
     }
     buildTypes {
@@ -46,8 +46,8 @@ ext {
     siteUrl = 'https://github.com/didikee/AndroidNormalUILibs'
     gitUrl = 'https://github.com/didikee/AndroidNormalUILibs.git'
 
-    //---- 2016-11-07 -----//
-    libraryVersion = '0.8.6'
+    //---- 2016-12-02 -----//
+    libraryVersion = '0.8.7'
 
     developerId = 'didikee'
     developerName = 'didikee'

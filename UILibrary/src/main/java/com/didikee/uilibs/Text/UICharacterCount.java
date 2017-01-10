@@ -10,7 +10,7 @@ public class UICharacterCount {
      * @param ch 需要判断的字符
      * @return 中文返回true，非中文返回false
      */
-    private static boolean isChinese(char ch) {
+    public static boolean isChinese(char ch) {
         //获取此字符的UniCodeBlock
         Character.UnicodeBlock ub = Character.UnicodeBlock.of(ch);
         //  GENERAL_PUNCTUATION 判断中文的“号
