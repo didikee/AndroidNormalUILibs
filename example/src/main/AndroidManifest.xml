@@ -15,16 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".act.ItemViewActivity">
-        </activity>
-        <activity android:name=".act.ImageTextActivity">
-        </activity>
-        <activity android:name=".act.XTransparentTitleViewActivity">
-        </activity>
-        <activity android:name=".act.ProgressTextActivity">
-        </activity>
-        <activity android:name=".ui.act.ShapeBgActivity">
-        </activity>
     </application>
 
 </manifest>

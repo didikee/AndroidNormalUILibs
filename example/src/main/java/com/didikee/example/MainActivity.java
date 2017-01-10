@@ -8,12 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.didikee.example.act.ImageTextActivity;
-import com.didikee.example.act.ItemViewActivity;
-import com.didikee.example.act.ProgressTextActivity;
-import com.didikee.example.act.XTransparentTitleViewActivity;
-import com.didikee.example.ui.act.ShapeBgActivity;
-
 public class MainActivity extends Activity {
 
     private ListView mList;
@@ -40,19 +34,14 @@ public class MainActivity extends Activity {
 
                 switch (i+1){
                     case 1:
-                        gotoActivity(ItemViewActivity.class);
                         break;
                     case 2:
-                        gotoActivity(ImageTextActivity.class);
                         break;
                     case 3:
-                        gotoActivity(XTransparentTitleViewActivity.class);
                         break;
                     case 4:
-                        gotoActivity(ProgressTextActivity.class);
                         break;
                     case 5:
-                        gotoActivity(ShapeBgActivity.class);
                         break;
                 }
             }
