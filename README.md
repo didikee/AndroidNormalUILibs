@@ -1,5 +1,10 @@
 # AndroidNormalUILibs
 
+### Gradle
+```
+compile 'com.didikee:UILibrary:0.8.9'
+```
+
 ### ListViewForScrollView
 
 ListView 嵌套在 ScrollView 中,可以将ScrollView的onTouch事件交给 ListViewForScrollView 过滤.

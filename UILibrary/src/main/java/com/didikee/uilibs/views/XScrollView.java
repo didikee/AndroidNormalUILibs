@@ -1,4 +1,4 @@
-package com.didikee.uilibs.viewgroups;
+package com.didikee.uilibs.views;
 
 import android.content.Context;
 import android.graphics.Rect;

@@ -47,7 +47,7 @@ ext {
     gitUrl = 'https://github.com/didikee/AndroidNormalUILibs.git'
 
     //---- 2017-01-10 -----//
-    libraryVersion = '0.8.8'
+    libraryVersion = '0.8.9'
 
     developerId = 'didikee'
     developerName = 'didikee'
