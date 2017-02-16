@@ -24,6 +24,17 @@
     <dimen name="md_small_margin">@dimen/dp8</dimen>
     <dimen name="md_normal_margin">@dimen/dp16</dimen>
 
+
+
+    <!--icon-->
+    <dimen name="md_icon">@dimen/dp48</dimen>
+    <dimen name="md_icon_core">@dimen/dp24</dimen>
+    <!--icon padding-->
+    <dimen name="md_icon_small_padding">2dp</dimen>
+    <dimen name="md_icon_normal_padding">4dp</dimen>
+    <!--divider-->
+    <dimen name="md_divider">1px</dimen>
+
     <!--item height 显示列表时-->
     <dimen name="md_item_small_height">@dimen/dp36</dimen>
     <dimen name="md_item_normal_height">@dimen/dp48</dimen>

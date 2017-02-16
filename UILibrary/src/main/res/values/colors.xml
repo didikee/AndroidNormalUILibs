@@ -2,6 +2,9 @@
 <resources>
     <color name="orange_main">#FF6600</color>
     <color name="gray_cc">#CCCCCC</color>
-
     <color name="md_gray_500">#9e9e9e</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
 </resources>
