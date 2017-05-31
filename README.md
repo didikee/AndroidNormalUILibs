@@ -2,28 +2,22 @@
 
 ### Gradle
 ```
-compile 'com.didikee:UILibrary:0.8.9'
+compile 'com.didikee:UILibrary:0.9.0'
 ```
 
-### ListViewForScrollView
+## UI 相关
 
-ListView 嵌套在 ScrollView 中,可以将ScrollView的onTouch事件交给 ListViewForScrollView 过滤.
-
-使用方法:
+### UICharacterCount 字符判断
 ```
-mShopAdapter = new GoodsDetailShopListAdapter(shop_list,this);
-//调用setScrollView(mscrollview)
-mShopListView.setScrollView(mSScrollView);
-mShopListView.setAdapter(mShopAdapter);
+boolean isChinese(char ch)  // 判断是否是中文字符
+float getCount(String str)  // 获取字符的数量
 ```
-API:
-* setScrollView(ScrollView mParentScrollView)
-* setInterceptTouchEventEnable(boolean isEnable)//动态的开启或关闭
 
-***
-### WaitFinishTextView
+###  DisplayUtil 屏幕尺寸
 
-一个TextView 点击后变为不可点击状态,直到你手动调用 ```onFinish()```
+## 工具类
 
-API:
-* onFinish() 在网络请求接口结束的回调(onFinish())中调用此方法,让TextView重新可点击
+### AbsSerializationHelper 序列化辅助类
+
+
+

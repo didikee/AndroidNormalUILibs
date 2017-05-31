@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--md 的尺寸是以 4和8 为基本度量的-->
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp2">2dp</dimen>
     <dimen name="dp4">4dp</dimen>
     <dimen name="dp8">8dp</dimen>
     <dimen name="dp12">12dp</dimen>
@@ -19,11 +21,16 @@
     <dimen name="dp64">64dp</dimen>
     <dimen name="dp68">68dp</dimen>
     <dimen name="dp72">72dp</dimen>
+    <dimen name="dp76">76dp</dimen>
+    <dimen name="dp96">96dp</dimen>
+    <dimen name="dp112">112dp</dimen>
+    <dimen name="dp120">120dp</dimen>
 
     <!--margin-->
+    <dimen name="md_min_margin">2dp</dimen>
+    <dimen name="md_min_large_padding">4dp</dimen>
     <dimen name="md_small_margin">@dimen/dp8</dimen>
     <dimen name="md_normal_margin">@dimen/dp16</dimen>
-
 
 
     <!--icon-->

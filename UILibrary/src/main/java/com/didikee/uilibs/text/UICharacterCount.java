@@ -1,4 +1,4 @@
-package com.didikee.uilibs.Text;
+package com.didikee.uilibs.text;
 
 /**
  * 获取字符串长度(类似 TextView EMS 属性)

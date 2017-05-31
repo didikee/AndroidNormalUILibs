@@ -9,7 +9,7 @@ apply plugin: 'com.jfrog.bintray'
 //---------------------------------
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         multiDexEnabled true
@@ -28,9 +28,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:24.1.0'
 }
 
 ext {
@@ -46,8 +45,8 @@ ext {
     siteUrl = 'https://github.com/didikee/AndroidNormalUILibs'
     gitUrl = 'https://github.com/didikee/AndroidNormalUILibs.git'
 
-    //---- 2017-01-10 -----//
-    libraryVersion = '0.8.9'
+    //---- 2017-05-30 -----//
+    libraryVersion = '0.9.0'
 
     developerId = 'didikee'
     developerName = 'didikee'
